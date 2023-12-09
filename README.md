@@ -2,6 +2,8 @@
  
  This script creates tree of folders for Dota 2 Workshop, and 3D pipeline.
  
+ ![example](https://i.imgur.com/I8dLviU.gif)
+ 
  If folder path, where script was running from right-click menu, contains Dota 2 hero name, it creates folder for each of his [slots](hero_and_slots.csv), and regular 3D pipeline folders.
  Slots of each hero is taken from official [requirements website](https://www.dota2.com/workshop/requirements/).
  
