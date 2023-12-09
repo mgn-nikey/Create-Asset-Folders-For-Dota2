@@ -71,7 +71,7 @@ if sys.argv[1] != "First": #Если запуск из файла Create Asset F
                         file_path_check = file_path_check[ : -1]
                         if os.path.exists(os.path.join(call_folder, slot, *file_path_check)) == False:
                             os.makedirs(os.path.join(call_folder, slot, *file_path_check)) #MKDIR
-                            ctypes.windll.user32.MessageBoxW(0, u"There's no Directory for " + empty_file + ", so " + str(file_path_check) +" Directory will be created", u"Error", 0)
+                            #ctypes.windll.user32.MessageBoxW(0, u"There's no Directory for " + empty_file + ", so " + str(file_path_check) +" Directory will be created", u"Error", 0)
                     if os.path.exists(os.path.join(call_folder, slot, empty_file)) == False:
                         open(os.path.join(call_folder, slot, empty_file), 'w').close()
 
@@ -80,9 +80,10 @@ if sys.argv[1] != "First": #Если запуск из файла Create Asset F
             if os.path.isdir(os.path.join(call_folder, pipeline_folder)) == False:       
                 os.makedirs(os.path.join(call_folder, pipeline_folder)) #MKDIR
             if test_textures_folder:
-                if any("Test" in pipeline_folder for s in pipeline_folders): #Копируем текстуры если есть папка
-                    if any("Texture" in pipeline_folder for s in pipeline_folders):
-                        shutil.copytree(test_textures_folder, pipeline_folder, dirs_exist_ok=True)
+                if os.path.exists(test_textures_folder):
+                    if any("Test" in pipeline_folder for s in pipeline_folders): #Копируем текстуры если есть папка
+                        if any("Texture" in pipeline_folder for s in pipeline_folders):
+                            shutil.copytree(test_textures_folder, pipeline_folder, dirs_exist_ok=True)
 
     dota_bin_folder = os.path.join(dota_folder, "game", "bin", "win64") #Путь dota bin
     workshop_shortcut = os.path.join(call_folder, "Workshop folder shortcut.lnk") #Путь ярлыка
@@ -90,15 +91,16 @@ if sys.argv[1] != "First": #Если запуск из файла Create Asset F
     items_folder = os.path.join(dota_folder, "content", "dota_addons", "workshop_testbed", "materials", "models", "items", hero) #Папка items
 
     if slots: #Создаем ярлык в папку items
-        if os.path.isdir(items_folder) == False:
-            os.mkdir(items_folder) #MKDIR
-        while os.path.isdir(items_folder):
-            shell = Dispatch('WScript.Shell')
-            shortcut = shell.CreateShortCut(workshop_shortcut)
-            shortcut.Targetpath = (items_folder)
-            shortcut.IconLocation = (workshop_shortcut_icon)
-            shortcut.save()  
-            break
+        if os.path.exists(dota_folder):
+            if os.path.isdir(items_folder) == False:
+                os.mkdir(items_folder) #MKDIR
+            while os.path.isdir(items_folder):
+                shell = Dispatch('WScript.Shell')
+                shortcut = shell.CreateShortCut(workshop_shortcut)
+                shortcut.Targetpath = (items_folder)
+                shortcut.IconLocation = (workshop_shortcut_icon)
+                shortcut.save()  
+                break
 
 #-----------------------------------regedit----------------------------------------------------
 
@@ -107,7 +109,7 @@ if sys.argv[1] == "First": #Если запуск из файла First setup.ba
     REG_PATH = r"Directory\\Background\\shell\\" #Путь KEY
     REG_KEY1 = "Create Asset Folders" #KEY
     REG_KEY = "command" #KEY
-    REG_VALUE = "test" #Default Value
+    REG_VALUE = "" #Default Value
     REG_BAT_PATH = os.path.join(launcher_path,'Create Asset Folders.bat "%V"') #Bat file path
 
     try:
