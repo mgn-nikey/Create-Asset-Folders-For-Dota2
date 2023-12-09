@@ -1,0 +1,19 @@
+	1.Sub-folders inside slot folders, separating them by "," // Example: Textures,Highpoly,Lowpoly
+-------------------------------------------
+Bakes,Clean modeling
+-------------------------------------------
+	2.Empty files which will be created inside each slot folder, separating them by ","
+-------------------------------------------
+SLOT.blend,SLOT.tbscene,SLOT.3b,SLOT_decimate_for_retopology.obj,SLOT_high.fbx,SLOT_low.obj,SLOT_retopo.obj
+-------------------------------------------
+	3.Pipeline folders, separating them by ","
+-------------------------------------------
+Texture,Test,Test\Highpoly,Test\Texture,Promo,Promo\Icons,Promo\Upload,Promo\RAW,Zbrush,Concept,Concept\Feedback,Lods
+-------------------------------------------
+	4.Path of Test textures for highpoly, if exists, textures will be taken from folder below and put in "Test\Textures"
+-------------------------------------------
+F:\Test textures
+-------------------------------------------
+	5.dota 2 beta folder path
+-------------------------------------------
+F:\SteamLibrary\steamapps\common\dota 2 beta

@@ -1,0 +1,649 @@
+Hero,slots
+zuus,Head
+zuus,Arms
+zuus,Back
+zuus,Belt
+skeleton_king,Head
+skeleton_king,Shoulders
+skeleton_king,Arms
+skeleton_king,Back
+skeleton_king,Weapon
+skeleton_king,Armor
+witch_doctor,Head
+witch_doctor,Shoulders
+witch_doctor,Back
+witch_doctor,Weapon
+witch_doctor,Belt
+witch_doctor,Ward (Summon)
+windrunner,Head
+windrunner,Shoulders
+windrunner,Back
+windrunner,Weapon
+windrunner,Weapon Offhand
+winter_wyvern,Head
+winter_wyvern,Back
+weaver,Head
+weaver,Arms
+weaver,Back
+weaver,Legs
+weaver,Misc
+warlock,Head
+warlock,Shoulders
+warlock,Arms
+warlock,Back (Robe)
+warlock,Weapon
+warlock,Weapon Offhand
+warlock,Belt
+warlock,Golem (Ultimate)
+void_spirit,Head
+void_spirit,Weapon
+void_spirit,Armor
+void_spirit,Belt
+visage,Head
+visage,Armor
+visage,Familiar
+viper,Head
+viper,Back
+viper,Tail
+venomancer,Head
+venomancer,Shoulders
+venomancer,Arms
+venomancer,Tail
+venomancer,Plague Ward (Ability 3)
+vengefulspirit,Head
+vengefulspirit,Shoulders
+vengefulspirit,Weapon
+vengefulspirit,Legs
+ursa,Head
+ursa,Arms
+ursa,Back
+ursa,Weapon
+ursa,Belt
+undying,Head
+undying,Arms
+undying,Armor
+undying,Flesh Golem (Ability 4)
+abyssal_underlord,Head
+abyssal_underlord,Weapon
+abyssal_underlord,Armor
+tusk,Head
+tusk,Neck
+tusk,Shoulders
+tusk,Arms
+tusk,Back
+tusk,Weapon
+tusk,Sigil (Ability 3)
+troll_warlord,Head
+troll_warlord,Shoulders
+troll_warlord,Weapons (Right and Left)
+troll_warlord,Armor
+treant,Head
+treant,Shoulders
+treant,Arms
+treant,Legs
+tiny,Medium
+tiny,Tiny
+tiny,Large
+tiny,Tree
+tiny,Small
+tinker,Head
+tinker,Shoulders
+tinker,Back
+tinker,Weapon
+tinker,Weapon Offhand
+techies,Squee
+techies,Spleen
+techies,Remote Mines
+techies,Spoon
+techies,Bazooka
+techies,Sign
+techies,Cart
+shredder,Head
+shredder,Shoulders
+shredder,Torso(Back)
+shredder,Claw(Weapon)
+shredder,Chainsaw(Offhand Weapon)
+shredder,Reactive Shield(Armor)
+tidehunter,Head
+tidehunter,Arms
+tidehunter,Back
+tidehunter,Weapon
+tidehunter,Weapon Offhand
+tidehunter,Belt
+terrorblade,Head
+terrorblade,Back
+terrorblade,Weapon
+terrorblade,Armor
+terrorblade,Demon Form (Ability 3)
+templar_assassin,Head
+templar_assassin,Shoulders
+templar_assassin,Weapon
+templar_assassin,Armor
+sven,Head
+sven,Shoulders
+sven,Arms
+sven,Back
+sven,Weapon
+sven,Belt
+storm_spirit,Head
+storm_spirit,Arms
+storm_spirit,Armor
+spirit_breaker,Head
+spirit_breaker,Shoulders
+spirit_breaker,Arms
+spirit_breaker,Weapon
+spirit_breaker,Belt
+spirit_breaker,Tail
+spectre,Head
+spectre,Shoulders
+spectre,Weapon
+spectre,Belt
+spectre,Misc
+sniper,Head
+sniper,Shoulders
+sniper,Arms
+sniper,Back
+sniper,Weapon
+snapfire,Head
+snapfire,Weapon
+snapfire,Armor
+snapfire,Mount
+slark,Head
+slark,Shoulders
+slark,Arms
+slark,Back
+slark,Weapon
+slardar,Head
+slardar,Arms
+slardar,Back
+slardar,Weapon
+skywrath_mage,Head
+skywrath_mage,Shoulders
+skywrath_mage,Arms
+skywrath_mage,Back
+skywrath_mage,Weapon
+skywrath_mage,Belt
+silencer,Head
+silencer,Shoulders
+silencer,Arms
+silencer,Weapon
+silencer,Weapon Offhand
+silencer,Belt
+shadow_shaman,Head
+shadow_shaman,Arms
+shadow_shaman,Weapon
+shadow_shaman,Weapon Offhand
+shadow_shaman,Belt
+shadow_shaman,Serpent Wards (Summon)
+nevermore,Head
+nevermore,Shoulders
+nevermore,Arms
+shadow_demon,Back (Cape and Spikes)
+shadow_demon,Armor (Chains)
+shadow_demon,Belt (Belt and Skirt)
+shadow_demon,Tail
+sand_king,Body - Head
+sand_king,Shoulders
+sand_king,Arms
+sand_king,Back
+sand_king,Legs
+rubick,Head
+rubick,Shoulders
+rubick,Back
+rubick,Weapon
+riki,Head
+riki,Shoulders
+riki,Arms
+riki,Weapon
+riki,Weapon Offhand
+riki,Tail
+razor,Head
+razor,Arms
+razor,Weapon
+razor,Armor
+razor,Belt
+queenofpain,Head
+queenofpain,Shoulders
+queenofpain,Back
+queenofpain,Weapon
+queenofpain,Legs
+pugna,Head
+pugna,Shoulders
+pugna,Arms
+pugna,Back
+pugna,Weapon
+pugna,Belt
+pugna,Ward (Ability 3)
+pudge,Head
+pudge,Shoulders
+pudge,Arms
+pudge,Back
+pudge,Weapon
+pudge,Weapon Offhand
+pudge,Belt
+pudge,Arms (Persona)
+pudge,Armor (Persona)
+pudge,Head (Persona)
+pudge,Offhand Weapon (Persona)
+pudge,Weapon (Persona)
+puck,Head
+puck,Back
+puck,Tail
+primal_beast,Head
+primal_beast,Arms
+primal_beast,Back
+primal_beast,Legs
+phoenix,Head
+phoenix,Back
+phoenix,Supernova (Ultimate)
+phantom_lancer,Head
+phantom_lancer,Shoulders
+phantom_lancer,Arms
+phantom_lancer,Weapon
+phantom_lancer,Belt
+phantom_assassin,Head
+phantom_assassin,Shoulders
+phantom_assassin,Back
+phantom_assassin,Weapon
+phantom_assassin,Belt
+phantom_assassin,Armor (Persona)
+phantom_assassin,Head (Persona)
+phantom_assassin,Leg Armor (Persona)
+phantom_assassin,Weapon (Persona)
+pangolier,Head
+pangolier,Weapon
+pangolier,Weapon Offhand
+pangolier,Armor
+oracle,Head
+oracle,Back
+oracle,Weapon
+oracle,Armor
+omniknight,Head
+omniknight,Shoulders
+omniknight,Arms
+omniknight,Back
+omniknight,Weapon
+ogre_magi,Head
+ogre_magi,Arms
+ogre_magi,Back
+ogre_magi,Weapon
+ogre_magi,Belt
+obsidian_destroyer,Head
+obsidian_destroyer,Back (Wings)
+obsidian_destroyer,Weapon
+obsidian_destroyer,Armor
+nyx_assassin,Head
+nyx_assassin,Back
+nyx_assassin,Weapon
+nyx_assassin,Misc
+night_stalker,Head
+night_stalker,Arms
+night_stalker,Back
+night_stalker,Legs
+night_stalker,Tail
+necrolyte,Head (Hat)
+necrolyte,Body - Head (Beard)
+necrolyte,Robe
+necrolyte,Weapon
+necrolyte,Legs
+furion,Head
+furion,Neck
+furion,Shoulders
+furion,Arms
+furion,Back
+furion,Weapon
+furion,Ability 3
+naga_siren,Head
+naga_siren,Weapon
+naga_siren,Weapon Offhand
+naga_siren,Armor
+naga_siren,Tail (Legs)
+muerta,Head
+muerta,Back
+muerta,Weapon
+muerta,Armor
+muerta,Ability (Ultimate)
+morphling,Head
+morphling,Shoulders
+morphling,Arms
+morphling,Back
+morphling,Misc
+monkey_king,Head
+monkey_king,Shoulders
+monkey_king,Weapon
+monkey_king,Armor
+mirana,Head
+mirana,Shoulders
+mirana,Arms
+mirana,Back
+mirana,Weapon (Bow)
+mirana,Mount
+mirana,Misc (Quiver)
+meepo,Head
+meepo,Shoulders
+meepo,Arms
+meepo,Back
+meepo,Weapon
+meepo,Tail
+medusa,Head
+medusa,Arms
+medusa,Weapon
+medusa,Armor
+medusa,Tail
+mars,Weapon
+mars,Weapon Offhand
+mars,Armor
+mars,Legs
+magnataur,Head
+magnataur,Arms
+magnataur,Weapon
+magnataur,Belt
+magnataur,Misc
+marci,Head
+marci,Shoulders
+marci,Back
+marci,Armor
+lycan,Head
+lycan,Shoulders
+lycan,Weapon
+lycan,Armor
+lycan,Belt
+lycan,Wolf Form (Ability 4)
+lycan,Summoned Wolf (Summon)
+luna,Head
+luna,Shoulders
+luna,Weapon
+luna,Weapon Offhand
+luna,Mount
+lone_druid,Head
+lone_druid,Shoulders
+lone_druid,Arms
+lone_druid,Back
+lone_druid,Weapon
+lone_druid,True Form (Ultimate)
+lone_druid,Spirit Bear (Summon)
+lion,Head
+lion,Shoulders
+lion,Arms
+lion,Back
+lion,Weapon
+lina,Head
+lina,Neck
+lina,Arms
+lina,Belt
+life_stealer,Head
+life_stealer,Arms
+life_stealer,Back
+life_stealer,Belt
+lich,Head
+lich,Neck
+lich,Arms
+lich,Back
+lich,Belt
+leshrac,Head
+leshrac,Back
+leshrac,Weapon (Optional)
+leshrac,Tail
+leshrac,Misc
+legion_commander,Head
+legion_commander,Shoulders
+legion_commander,Arms
+legion_commander,Back
+legion_commander,Weapon
+legion_commander,Legs
+kunkka,Head
+kunkka,Neck
+kunkka,Shoulders
+kunkka,Gloves
+kunkka,Back
+kunkka,Weapon
+kunkka,Belt
+kunkka,Legs
+keeper_of_the_light,Head
+keeper_of_the_light,Weapon
+keeper_of_the_light,Belt
+keeper_of_the_light,Mount
+juggernaut,Head
+juggernaut,Arms
+juggernaut,Back
+juggernaut,Weapon
+juggernaut,Legs
+juggernaut,Ability 2 (Healing Ward)
+jakiro,Right Head
+jakiro,Left Head
+jakiro,Wings
+jakiro,Tail
+invoker,Head
+invoker,Shoulders
+invoker,Arms
+invoker,Back
+invoker,Belt
+invoker,Forge Spirit Summon
+invoker,Arms (Persona)
+invoker,Armor (Persona)
+invoker,Back (Persona)
+invoker,Head (Persona)
+invoker,Shoulders (Persona)
+invoker,Forge Spirit Summon (Persona)
+huskar,Head
+huskar,Shoulders
+huskar,Arms
+huskar,Weapon
+huskar,Weapon Offhand
+hoodwink,Back
+hoodwink,Weapon
+hoodwink,Armor
+hoodwink,Tail
+gyrocopter,Head
+gyrocopter,Back (Bottles and Rockets)
+gyrocopter,Weapon (Wings and Wing Guns)
+gyrocopter,Offhand Weapon (Bomb)
+gyrocopter,Misc (Front Propellor)
+grimstroke,Head
+grimstroke,Weapon
+grimstroke,Armor
+grimstroke,Belt
+faceless_void,Body - Head
+faceless_void,Shoulders
+faceless_void,Arms
+faceless_void,Weapon
+faceless_void,Belt
+enigma,Head
+enigma,Arms
+enigma,Armor
+enigma,Eidolons
+enchantress,Head
+enchantress,Neck
+enchantress,Arms
+enchantress,Weapon
+enchantress,Belt
+ember_spirit,Head
+ember_spirit,Shoulders
+ember_spirit,Arms
+ember_spirit,Weapon
+ember_spirit,Weapon Offhand
+ember_spirit,Belt
+elder_titan,Head
+elder_titan,Shoulders
+elder_titan,Arms
+elder_titan,Back
+elder_titan,Weapon
+earth_spirit,Head
+earth_spirit,Neck
+earth_spirit,Arms
+earth_spirit,Weapon
+earth_spirit,Belt
+earth_spirit,Stone Summons (Ability 4)
+earthshaker,Head
+earthshaker,Arms
+earthshaker,Weapon
+earthshaker,Belt
+drow_ranger,Head
+drow_ranger,Shoulders
+drow_ranger,Arms
+drow_ranger,Back
+drow_ranger,Weapon
+drow_ranger,Legs
+drow_ranger,Misc
+dragon_knight,Head
+dragon_knight,Shoulders
+dragon_knight,Arms
+dragon_knight,Back
+dragon_knight,Weapon
+dragon_knight,Weapon Offhand
+dragon_knight,Elder Dragon (Shapeshift)
+doom_bringer,Head
+doom_bringer,Shoulders
+doom_bringer,Arms
+doom_bringer,Back
+doom_bringer,Weapon
+doom_bringer,Belt
+doom_bringer,Tail
+disruptor,Head
+disruptor,Shoulders
+disruptor,Arms
+disruptor,Back
+disruptor,Weapon
+disruptor,Legs (Mount)
+death_prophet,Head
+death_prophet,Armor
+death_prophet,Scarf (Belt)
+death_prophet,Skirt (Legs)
+death_prophet,Misc
+death_prophet,Exorcism Ghosts (Ultimate)
+dazzle,Arms
+dazzle,Back
+dazzle,Weapon
+dazzle,Legs
+dazzle,Misc
+dawnbreaker,Head
+dawnbreaker,Arms
+dawnbreaker,Weapon
+dawnbreaker,Armor
+dark_willow,Head
+dark_willow,Back
+dark_willow,Offhand
+dark_willow,Armor
+dark_willow,Belt
+dark_seer,Head
+dark_seer,Shoulders
+dark_seer,Arms
+dark_seer,Back
+dark_seer,Belt
+crystal_maiden,Head
+crystal_maiden,Shoulders
+crystal_maiden,Arms
+crystal_maiden,Back
+crystal_maiden,Weapon
+crystal_maiden,Armor (Persona)
+crystal_maiden,Head (Persona)
+crystal_maiden,Crystals (Persona)
+crystal_maiden,Tail (Persona)
+rattletrap,Head
+rattletrap,Weapon
+rattletrap,Armor
+rattletrap,Misc (Rocket)
+rattletrap,Ability 2 (Power Cogs)
+clinkz,Head
+clinkz,Shoulders
+clinkz,Gloves
+clinkz,Back
+clinkz,Weapon
+clinkz,Summon
+chen,Head
+chen,Shoulders
+chen,Arms
+chen,Weapon
+chen,Mount
+chaos_knight,Head
+chaos_knight,Shoulders
+chaos_knight,Weapon
+chaos_knight,Weapon Offhand
+chaos_knight,Mount
+centaur,Head
+centaur,Shoulders
+centaur,Arms
+centaur,Back (Shields)
+centaur,Weapon
+centaur,Belt
+centaur,Tail
+broodmother,Head
+broodmother,Back
+broodmother,Legs
+broodmother,Misc
+broodmother,Spiderlings (Ability 1)
+bristleback,Head
+bristleback,Neck
+bristleback,Arms
+bristleback,Back
+bristleback,Weapon
+brewmaster,Head
+brewmaster,Shoulders
+brewmaster,Arms
+brewmaster,Back
+brewmaster,Weapon
+brewmaster,Weapon Offhand
+bounty_hunter,Head
+bounty_hunter,Misc/Shuriken (Shoulder)
+bounty_hunter,Back
+bounty_hunter,Weapon
+bounty_hunter,Weapon Offhand
+bounty_hunter,Armor
+bloodseeker,Head
+bloodseeker,Shoulders
+bloodseeker,Arms
+bloodseeker,Back
+bloodseeker,Weapon
+bloodseeker,Weapon Offhand
+bloodseeker,Belt
+beastmaster,Head
+beastmaster,Shoulders
+beastmaster,Arms
+beastmaster,Weapon
+beastmaster,Belt
+beastmaster,Bird (Ability 2)
+beastmaster,Beast (Summon)
+batrider,Head
+batrider,Shoulder (Cape)
+batrider,Belt
+batrider,Mount
+bane,Head
+bane,Shoulders
+bane,Arms
+bane,Back
+axe,Head
+axe,Weapon
+axe,Armor
+axe,Belt
+axe,Misc
+arc_warden,Head
+arc_warden,Shoulders
+arc_warden,Arms
+arc_warden,Back
+antimage,Head
+antimage,Shoulders
+antimage,Arms
+antimage,Weapon
+antimage,Weapon Offhand
+antimage,Armor
+antimage,Belt
+antimage,Armor (Persona)
+antimage,Head (Persona)
+antimage,Offhand Weapon (Persona)
+antimage,Weapon (Persona)
+ancient_apparition,Ancient Apparition's Head
+ancient_apparition,Shoulders
+ancient_apparition,Arms
+ancient_apparition,Tail
+alchemist,Goblin Hat (Neck)
+alchemist,Shoulders
+alchemist,Arms
+alchemist,Goblin Body (Back)
+alchemist,Weapon
+alchemist,Goblin Weapon (Offhand Weapon)
+alchemist,Saddle (Armor)
+abaddon,Head
+abaddon,Shoulders
+abaddon,Back
+abaddon,Weapon
+abaddon,Mount
