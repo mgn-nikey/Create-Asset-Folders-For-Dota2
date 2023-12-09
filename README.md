@@ -11,18 +11,18 @@
   - If there's no hero name in folder path, it creates only pipeline folders.
   - If there's a Test/Texture folder in row 11 in [Pipeline Folders](pipeline_folders.csv), it copies textures from row 15 in [Pipeline Folders](pipeline_folders.csv) to that folder.
 
- Also creates shortcut to dota2/items folder for easy access, dota 2 beta folder path must be written in row 19 in [Pipeline Folders](pipeline_folders.csv). Shortcut uses hero icon from icons folder.
+ Also creates shortcut to dota2/items folder for easy access, path to "dota 2 beta folder" must be written in row 19 in [Pipeline Folders](pipeline_folders.csv). Shortcut uses hero icon from icons folder.
  
 # First Setup
 
  Script requires [Python](https://www.python.org/downloads/)
- !IMPORTANT When installing Python, checkbox "Add Python to PATH." must be checked.
+ **!!!IMPORTANT** ***When installing Python, checkbox "Add Python to PATH." must be checked.***
  
  Run [First Setup](First_setup.bat) file as administrator. 
  It will create reg key that allows script to run from right-click menu, and install 2 python modules to work correctly.
- 
- Then folders could be created from right-click menu by clicking on 'Create Asset Folders' button.
 
 # Pipeline folders setup
 
+ Folders could be created from right-click menu by clicking on 'Create Asset Folders' button.
+ 
  Open [Pipeline Folders](pipeline_folders.csv) with notepad and follow instructions in the file.
