@@ -12,6 +12,7 @@ from win32com.client import Dispatch
 rows = []
 slots = []
 empty_files = []
+empty_files_redacted = []
 path_arrays = [] #Массив для деления на части пути через каждый "/" (путь папки откуда вызвано меню)
 pipeline_folders = [] 
 additional_slot_folders = []
@@ -52,19 +53,23 @@ if sys.argv[1] != "First": #Если запуск из файла Create Asset F
                 if row[0] == path_array.lower():
                     hero = row[0]
                     slots.append(row[1]) #Добавляем слоты в массив
-
+                    
     if slots: #Если в пути где вызвано меню есть герой, создаем папки слотов
         for slot in slots:
-            empty_files = [slot_word.replace('SLOT', slot) for slot_word in empty_files]
-            os.mkdir(os.path.join(call_folder, slot)) #MKDIR
+            empty_files_redacted = [slot_word.replace('SLOT', slot) for slot_word in empty_files]
+            if os.path.isdir(os.path.join(call_folder, slot)) == False:
+                os.mkdir(os.path.join(call_folder, slot)) #MKDIR
             for additional_slot_folder in additional_slot_folders:
-                os.mkdir(os.path.join(call_folder, slot, additional_slot_folder)) #MKDIR
-            for empty_file in empty_files:
-                open(os.path.join(call_folder, slot, empty_file), 'w').close()
+                if os.path.isdir(os.path.join(call_folder, slot, additional_slot_folder)) == False:
+                    os.mkdir(os.path.join(call_folder, slot, additional_slot_folder)) #MKDIR
+            for empty_file in empty_files_redacted:
+                if os.path.isfile(os.path.join(call_folder, slot, empty_file)) == False:
+                    open(os.path.join(call_folder, slot, empty_file), 'w').close()
 
     if pipeline_folders:
         for pipeline_folder in pipeline_folders: #Создаем основные папки
-            os.mkdir(os.path.join(call_folder, pipeline_folder)) #MKDIR
+            if os.path.isdir(os.path.join(call_folder, pipeline_folder)) == False:       
+                os.mkdir(os.path.join(call_folder, pipeline_folder)) #MKDIR
             if test_textures_folder:
                 if any("Test" in pipeline_folder for s in pipeline_folders): #Копируем текстуры если есть папка
                     if any("Texture" in pipeline_folder for s in pipeline_folders):
@@ -76,11 +81,15 @@ if sys.argv[1] != "First": #Если запуск из файла Create Asset F
     items_folder = os.path.join(dota_folder, "content", "dota_addons", "workshop_testbed", "materials", "models", "items", hero) #Папка items
 
     if slots: #Создаем ярлык в папку items
-        shell = Dispatch('WScript.Shell')
-        shortcut = shell.CreateShortCut(workshop_shortcut)
-        shortcut.Targetpath = (items_folder)
-        shortcut.IconLocation = (workshop_shortcut_icon)
-        shortcut.save()
+        if os.path.isdir(items_folder) == False:
+            os.mkdir(items_folder) #MKDIR
+        while os.path.isdir(items_folder):
+            shell = Dispatch('WScript.Shell')
+            shortcut = shell.CreateShortCut(workshop_shortcut)
+            shortcut.Targetpath = (items_folder)
+            shortcut.IconLocation = (workshop_shortcut_icon)
+            shortcut.save()  
+            break
 
 #-----------------------------------regedit----------------------------------------------------
 
