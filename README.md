@@ -17,7 +17,7 @@
 
  Script requires [Python](https://www.python.org/downloads/)
  
- Run [First Setup](First setup.bat) file as administrator. 
+ Run [First Setup](First_setup.bat) file as administrator. 
  It will create reg key that allows script to run from right-click menu, and install 2 python modules to work correctly.
  
  Then folders could be created from right-click menu by clicking on 'Create Asset Folders' button.
