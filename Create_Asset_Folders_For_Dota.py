@@ -104,18 +104,24 @@ if sys.argv[1] != "First": #Если запуск из файла Create Asset F
 
 if sys.argv[1] == "First": #Если запуск из файла First setup.bat
 
-    REG_PATH = r"Directory\\Background\\shell\\Create Asset Folders\\" #Путь KEY
+    REG_PATH = r"Directory\\Background\\shell\\" #Путь KEY
+    REG_KEY1 = "Create Asset Folders" #KEY
     REG_KEY = "command" #KEY
-    REG_VALUE = "" #Default Value
+    REG_VALUE = "test" #Default Value
     REG_BAT_PATH = os.path.join(launcher_path,'Create Asset Folders.bat "%V"') #Bat file path
 
     try:
         location = wrg.HKEY_CLASSES_ROOT 
         soft = wrg.OpenKeyEx(location, REG_PATH) 
-        key_1 = wrg.CreateKey(soft, REG_KEY) 
-        wrg.SetValueEx(key_1, REG_VALUE, 0, wrg.REG_SZ, REG_BAT_PATH) 
+        key_1 = wrg.CreateKey(soft, REG_KEY1) 
         if key_1: 
             wrg.CloseKey(key_1) 
+            REG_PATH = REG_PATH + REG_KEY1 + "\\"
+        soft = wrg.OpenKeyEx(location, REG_PATH) 
+        key_2 = wrg.CreateKey(soft, REG_KEY) 
+        wrg.SetValueEx(key_2, REG_VALUE, 0, wrg.REG_SZ, REG_BAT_PATH) 
+        if key_2: 
+            wrg.CloseKey(key_2) 
     except:
         ctypes.windll.user32.MessageBoxW(0, u"Run First setup as Admin", u"Error", 0)
         #print(" Run First setup as Admin \n Run First setup as Admin \n Run First setup as Admin \n Run First setup as Admin \n Run First setup as Admin \n ")

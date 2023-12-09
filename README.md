@@ -16,6 +16,7 @@
 # First Setup
 
  Script requires [Python](https://www.python.org/downloads/)
+ !IMPORTANT When installing Python, checkbox "Add Python to PATH." must be checked.
  
  Run [First Setup](First_setup.bat) file as administrator. 
  It will create reg key that allows script to run from right-click menu, and install 2 python modules to work correctly.
