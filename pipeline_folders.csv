@@ -2,13 +2,13 @@
 -------------------------------------------
 Bakes,Clean modeling
 -------------------------------------------
-	2.Empty files which will be created inside each slot folder, separating them by ",". Don't use spaces.
+	2.Empty files which will be created inside each slot folder, separating them by ",". Use backslash to create files inside folders. Don't use spaces.
 -------------------------------------------
 SLOT.blend,SLOT.tbscene,Retopo\SLOT.3b,Retopo\SLOT_decimate_for_retopology.obj,SLOT_high.fbx,SLOT_low.obj,Retopo\SLOT_retopo.obj
 -------------------------------------------
-	3.List of folders that will be created. To create folders inside folders, use backslash. Don't use spaces, and separate folders by ","
+	3.List of folders that will be created. Use backslash to create folders inside folders. Don't use spaces, and separate folders by ","
 -------------------------------------------
-Texture,Test\Highpoly,Test\Texture,Promo,Promo\Icons,Promo\Upload,Promo\RAW,Zbrush,Concept,Concept\Feedback,Lods\dmx,Lods\fbx
+Texture,Test\Highpoly,Test\Texture,Promo,Promo\Icons,Promo\Upload,Promo\RAW,Zbrush,Concept,Concept\Feedback
 -------------------------------------------
 	4.Path of Test textures for highpoly, if exists, textures will be copied from folder below and put in "Test\Texture" if it was created from List 3.
 -------------------------------------------
