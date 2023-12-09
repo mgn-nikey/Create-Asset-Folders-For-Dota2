@@ -10,7 +10,7 @@ SLOT.blend,SLOT.tbscene,SLOT.3b,SLOT_decimate_for_retopology.obj,SLOT_high.fbx,S
 -------------------------------------------
 Texture,Test,Test\Highpoly,Test\Texture,Promo,Promo\Icons,Promo\Upload,Promo\RAW,Zbrush,Concept,Concept\Feedback,Lods
 -------------------------------------------
-	4.Path of Test textures for highpoly, if exists, textures will be taken from folder below and put in "Test\Textures"
+	4.Path of Test textures for highpoly, if exists, textures will be taken from folder below and put in "Test\Texture"
 -------------------------------------------
 F:\Test textures
 -------------------------------------------
