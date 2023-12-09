@@ -4,7 +4,7 @@ Bakes,Clean modeling
 -------------------------------------------
 	2.Empty files which will be created inside each slot folder, separating them by ","
 -------------------------------------------
-SLOT.blend,SLOT.tbscene,SLOT.3b,SLOT_decimate_for_retopology.obj,SLOT_high.fbx,SLOT_low.obj,SLOT_retopo.obj
+SLOT.blend,SLOT.tbscene,Retopo\SLOT.3b,Retopo\SLOT_decimate_for_retopology.obj,SLOT_high.fbx,SLOT_low.obj,Retopo\SLOT_retopo.obj
 -------------------------------------------
 	3.Pipeline folders, separating them by ","
 -------------------------------------------
