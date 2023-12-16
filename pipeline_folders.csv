@@ -1,19 +1,23 @@
-	1.Sub-folders inside slot folders, separating them by "," // Example: Textures,Highpoly,Lowpoly
+	1.Sub-folders from list below will be created inside slot folders.									// Separate files by ",". Use backslash to create files inside folders. Don't use spaces.
 -------------------------------------------
 Bakes,Clean modeling
 -------------------------------------------
-	2.Empty files which will be created inside each slot folder, separating them by ",". Use backslash to create files inside folders. Don't use spaces.
+	2.Empty files from list below will be created inside each slot folder. "SLOT" changes to hero slot. // Separate files by ",". Use backslash to create files inside folders. Don't use spaces.
 -------------------------------------------
 SLOT.blend,SLOT.tbscene,Retopo\SLOT.3b,Retopo\SLOT_decimate_for_retopology.obj,SLOT_high.fbx,SLOT_low.obj,Retopo\SLOT_retopo.obj
 -------------------------------------------
-	3.List of folders that will be created. Use backslash to create folders inside folders. Don't use spaces, and separate folders by ","
+	3.Pipeline folders from list below will be created. 												// Separate files by ",". Use backslash to create folders inside folders. Don't use spaces.
 -------------------------------------------
-Texture,Test\Highpoly,Test\Texture,Promo,Promo\Icons,Promo\Upload,Promo\RAW,Zbrush,Concept,Concept\Feedback
+Texture,Test\Highpoly,Test\Texture,Promo,Promo\Icons,Promo\Upload,Promo\RAW,Zbrush,Concept,Concept\Feedback,Project related files
+-------------------------------------------
+	3.1.Empty files from list below will be created inside each pipeline (3) folder.					// Separate files by ",". Use backslash to create files inside folders. Don't use spaces.
+-------------------------------------------
+Lods\dmx\SLOT_lod0.dmx,Lods\dmx\SLOT_lod1.dmx,Lods\fbx\SLOT_lod1.fbx,Lods\fbx\SLOT_lod0.fbx
 -------------------------------------------
 	4.Path of Test textures for highpoly, if exists, textures will be copied from folder below and put in "Test\Texture" if it was created from List 3.
 -------------------------------------------
 F:\Test textures
 -------------------------------------------
-	5.To create shortcut to items folder, copy "dota 2 beta" folder path and paste here.
+	5.To create shortcut to items folder, copy "dota 2 beta" folder path and paste here as shown below.
 -------------------------------------------
 F:\SteamLibrary\steamapps\common\dota 2 beta
