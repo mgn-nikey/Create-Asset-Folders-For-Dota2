@@ -43,19 +43,19 @@ if sys.argv[1] in ("First", "Uninstall"):
 
 #-----------------------------------functions---------------------------------------------------
 
-def create_files():
-    empty_files_redacted = [slot_word.replace('SLOT', slot) for slot_word in empty_files_pipeline]
+def create_files(sl, empty):
+    empty_files_redacted = [slot_word.replace('SLOT', slot) for slot_word in empty]
     for empty_file in empty_files_redacted: #Создаем пустые файлы с неймингом
-        if os.path.exists(os.path.join(call_folder, empty_file)) == False:
+        if os.path.exists(os.path.join(call_folder, sl, empty_file)) == False:
             if '/' in empty_file:
                 empty_file = empty_file.replace("/","\\")
             if '\\' in empty_file:
                 file_path_check = empty_file.strip().split('\\')
                 file_path_check = file_path_check[ : -1]
-                if os.path.exists(os.path.join(call_folder, *file_path_check)) == False:
-                    os.makedirs(os.path.join(call_folder, *file_path_check)) #MKDIRS
-            if os.path.exists(os.path.join(call_folder, empty_file)) == False:
-                open(os.path.join(call_folder, empty_file), 'w').close()
+                if os.path.exists(os.path.join(call_folder, sl, *file_path_check)) == False:
+                    os.makedirs(os.path.join(call_folder, sl, *file_path_check)) #MKDIRS
+            if os.path.exists(os.path.join(call_folder, sl, empty_file)) == False:
+                open(os.path.join(call_folder, sl, empty_file), 'w').close()
 
 #-----------------------------------main-------------------------------------------------------
 
@@ -84,24 +84,12 @@ if sys.argv[1] not in ("First", "Uninstall"): #Если запуск из фай
 
     if slots: #Если в пути где вызвано меню есть герой, создаем папки слотов
         for slot in slots:
-            empty_files_redacted = [slot_word.replace('SLOT', slot) for slot_word in empty_files_slots]
             if os.path.isdir(os.path.join(call_folder, slot)) == False:
                 os.mkdir(os.path.join(call_folder, slot)) #MKDIR
             for additional_slot_folder in additional_slot_folders:
                 if os.path.isdir(os.path.join(call_folder, slot, additional_slot_folder)) == False:
                     os.mkdir(os.path.join(call_folder, slot, additional_slot_folder)) #MKDIR
-            for empty_file in empty_files_redacted: #Создаем пустые файлы с неймингом
-                if os.path.exists(os.path.join(call_folder, slot, empty_file)) == False:
-                    if '/' in empty_file:
-                        empty_file = empty_file.replace("/","\\")
-                    if '\\' in empty_file:
-                        file_path_check = empty_file.strip().split('\\')
-                        file_path_check = file_path_check[ : -1]
-                        if os.path.exists(os.path.join(call_folder, slot, *file_path_check)) == False:
-                            os.makedirs(os.path.join(call_folder, slot, *file_path_check)) #MKDIR
-                            #ctypes.windll.user32.MessageBoxW(0, u"There's no Directory for " + empty_file + ", so " + str(file_path_check) +" Directory will be created", u"Error", 0)
-                    if os.path.exists(os.path.join(call_folder, slot, empty_file)) == False:
-                        open(os.path.join(call_folder, slot, empty_file), 'w').close()
+            create_files(slot, empty_files_slots)  
 
     if pipeline_folders:
         for pipeline_folder in pipeline_folders: #Создаем основные папки
@@ -120,9 +108,9 @@ if sys.argv[1] not in ("First", "Uninstall"): #Если запуск из фай
         for files_pipeline in empty_files_pipeline:
             if("SLOT" in files_pipeline):
                 for slot in slots:
-                    create_files()
+                    create_files("", empty_files_pipeline)
             else:
-                create_files()    
+                create_files("", empty_files_pipeline)    
             
 
     dota_bin_folder = os.path.join(dota_folder, "game", "bin", "win64") #Путь dota bin
@@ -145,7 +133,6 @@ if sys.argv[1] not in ("First", "Uninstall"): #Если запуск из фай
 #-----------------------------------regedit----------------------------------------------------
 
 if sys.argv[1] == "First": #Если запуск из файла First setup.bat
-
     try:
         location = wrg.HKEY_CLASSES_ROOT 
         soft = wrg.OpenKeyEx(location, REG_PATH) 
@@ -162,7 +149,6 @@ if sys.argv[1] == "First": #Если запуск из файла First setup.ba
         ctypes.windll.user32.MessageBoxW(0, u"Run First setup as Admin", u"Error", 0)
 
 if sys.argv[1] == "Uninstall": #Если запуск из файла Uninstall.bat
-
     try:
         location = wrg.HKEY_CLASSES_ROOT 
         soft = wrg.OpenKeyEx(location, REG_PATH) 
@@ -179,3 +165,5 @@ if sys.argv[1] == "Uninstall": #Если запуск из файла Uninstall.
             wrg.CloseKey(key_1) 
     except:
         ctypes.windll.user32.MessageBoxW(0, u"Run First setup as Admin", u"Error", 0)
+
+#-----------------------------------end-------------------------------------------------------
